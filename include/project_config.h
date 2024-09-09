@@ -109,54 +109,54 @@
 #define CONFIG_IOEXP_OUTPUTS_LEVEL_LED    0
 #define CONFIG_IOEXP_OUTPUTS_LEVEL_RELAY  1
 
-// EN: Doorbell 12V
-// RU: Дверной звонок 12В
-#define CONFIG_IOEXP_OUTPUTS_DOORBELL     0x00 
+// EN: Flasher 12V
+// RU: Световой извещатель 12В
+#define CONFIG_IOEXP_OUTPUTS_FLASHER      0x00
 // EN: Siren 12V
 // RU: Сирена 12В
 #define CONFIG_IOEXP_OUTPUTS_SIREN        0x01
-// EN: Flasher 12V
-// RU: Световой извещатель 12В
-#define CONFIG_IOEXP_OUTPUTS_FLASHER      0x02
 // EN: External relay or 12V load (MOSFET open drain)
 // RU: Внешнее реле или нагрузка 12В (MOSFET open drain)
-#define CONFIG_IOEXP_OUTPUTS_RELAY_1      0x03
+#define CONFIG_IOEXP_OUTPUTS_OD1          0x02
 // EN: External relay or 12V load (MOSFET open drain)
 // RU: Внешнее реле или нагрузка 12В (MOSFET)
-#define CONFIG_IOEXP_OUTPUTS_RELAY_2      0x04
+#define CONFIG_IOEXP_OUTPUTS_OD2          0x03
 // EN: External relay or 12V load (MOSFET open drain)
 // RU: Внешнее реле или нагрузка 12В (MOSFET)
-#define CONFIG_IOEXP_OUTPUTS_RELAY_3      0x05
-// EN: Reset relay for self-locking two-wire smoke detectors
-// RU: Реле сброса самоблокирующихся двухпроводных датчиков дыма
-#define CONFIG_IOEXP_OUTPUTS_SMRESET      0x06
+#define CONFIG_IOEXP_OUTPUTS_OD3          0x04
 // EN: External relay or 12V load (MOSFET open drain)
 // RU: Внешнее реле или нагрузка 12В (MOSFET)
-#define CONFIG_IOEXP_OUTPUTS_RELAY_4      0x07
+#define CONFIG_IOEXP_OUTPUTS_OD4          0x05
+// EN: Doorbell activation relay
+// RU: Реле активации дверного звонка
+#define CONFIG_IOEXP_OUTPUTS_DOORBELL     0x06
+// EN: Resetting the power line of two-wire sensors
+// RU: Сброс линии питания двухпроводных датчиков
+#define CONFIG_IOEXP_OUTPUTS_SMOKE_RESET  0x07
 // EN: External relay or 12V load (MOSFET open drain)
 // RU: Внешнее реле или нагрузка 12В (MOSFET)
-#define CONFIG_IOEXP_OUTPUTS_RELAY_5      0x08
-// EN: Reserve LED (low level)
-// RU: Резерв светодиод (низкий уровень)
-#define CONFIG_IOEXP_OUTPUTS_LED_4        0x09
+#define CONFIG_IOEXP_OUTPUTS_OD5          0x08
+// EN: External LED (low level)
+// RU: Внешний светодиод (низкий уровень)
+#define CONFIG_IOEXT_OUTPUTS_LED_TM       0x09
 // EN: External relay or 12V load (MOSFET open drain)
 // RU: Внешнее реле или нагрузка 12В (MOSFET)
-#define CONFIG_IOEXT_OUTPUTS_RELAY_6      0x0A
+#define CONFIG_IOEXP_OUTPUTS_OD8          0x0A
 // EN: System LED (low level)
 // RU: Системный светодиод (низкий уровень)
-#define CONFIG_IOEXP_OUTPUTS_LED_SYS      0x0B
+#define CONFIG_IOEXT_OUTPUTS_SYS_LED      0x0B
 // EN: External relay or 12V load (MOSFET open drain)
 // RU: Внешнее реле или нагрузка 12В (MOSFET)
-#define CONFIG_IOEXT_OUTPUTS_RELAY_7      0x0C
+#define CONFIG_IOEXP_OUTPUTS_OD7          0x0C
 // EN: Alarm LED (red) (low level)
 // RU: Сигнализация (красный) (низкий уровень)
 #define CONFIG_IOEXP_OUTPUTS_LED_ALARM    0x0D
-// EN: Battery CTC activation relay
-// RU: Реле активации КТЦ аккумулятора
-#define CONFIG_IOEXP_OUTPUTS_AKK_CTC      0x0E
+// EN: External relay or 12V load (MOSFET open drain)
+// RU: Внешнее реле или нагрузка 12В (MOSFET)
+#define CONFIG_IOEXP_OUTPUTS_OD6          0x0E
 // EN: Warning LED (yellow) (low level)
-// RU: Предупреждение (желтый) (низкий уровень)
-#define CONFIG_IOEXP_OUTPUTS_LED_WARN     0x0F
+// RU: Отопление (желтый) (низкий уровень)
+#define CONFIG_IOEXP_OUTPUTS_LED_HEAT     0x0F
 
 #define CONFIG_IOEXP_INPUTS1_ADDRESS      0x22
 #define CONFIG_IOEXP_INPUTS2_ADDRESS      0x21
